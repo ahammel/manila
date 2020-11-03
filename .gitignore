@@ -10,14 +10,15 @@ pom.xml.asc
 /classes/
 /target/
 /checkouts/
-.lein-deps-sum
-.lein-repl-history
-.lein-plugins/
-.lein-failures
 .nrepl-port
 .cpcache/
 
 ### Leiningen ###
+/.lein-*
+/.nrepl-port
+/.prepl-port
+.hgignore
+.hg/
 
 ### Vim ###
 # Swap
