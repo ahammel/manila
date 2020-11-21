@@ -134,5 +134,3 @@
           :favorite-fruit "banana"}
          :relationships
          {:parent {:data {:type "folder" :id "parent"}}}}}})))
-
-
