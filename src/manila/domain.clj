@@ -44,11 +44,11 @@
   (keep
     (fn [{attr-key ::key attr ::value}]
       (when-let [field (get-val attr-key (::fields schema))]
-        (when-not (matches-attribute field attribute?)
+        (when-not (matches-attribute? field attr)
           {::schema-violation ::type-mismatch
            ::attribute attr
-           ::field field}))
-      (::attributes obj))))
+           ::field field})))
+    (::attributes obj)))
 
 (defn ^:private attributes-not-in-schema
   [obj schema]
